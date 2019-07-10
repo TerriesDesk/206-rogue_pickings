@@ -46,6 +46,7 @@ p {
 .container{
 	max-width: 1200px;
 	width: 90%;
+	height: auto;
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: center;
@@ -55,6 +56,7 @@ p {
 /***************HEADER STYLES *****************/
 header {
 	width: 100%;
+	height: auto;
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: center;
@@ -63,6 +65,7 @@ header {
 
 header h1 {
 	width: 100%;
+	height: auto;
 	margin: 1em 0;
 	text-align: center;
 	border-bottom: 3px solid #77a466;
@@ -90,29 +93,33 @@ header nav ul li a{
 	color:#77a466;
 }
 
-/*The widths are in a percentage!*/
+/************** MAIN SECTION ****************/
 .top-section,
 .bottom-section {
+	width: 100%;
+	height: auto;
 	display: flex;
+	flex-flow: column nowrap;
 	justify-content: center;
 	align-items: center;
-
 	margin: 0 auto;
-	clear: both;
 }
 
 .main-image {
+	width: 100%;
 	height: auto;
-	float: left;
 }
+
 .main-image img {
 	width: 100%;
-	border-bottom: 3px solid #77a466;
+	height: auto;
+	border: 3px solid #77a466;
 }
 
 .main-title {
+	width: 100%;
 	height: auto;
-	float: left;
+
 }
 .main-title h3 {
 	text-align: left;
@@ -125,28 +132,18 @@ header nav ul li a{
 	line-height: 1.56em;
 }
 
+/************** BOTTOM SECTION ***********************/
 .section-one,
 .section-two,
 .section-three {
-	width: 33%;
+	width: 100%;
 	height: auto;
-	float: left;
-	border-top: 1px solid #eee;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	border-top: 3px solid #eee;
 }
 
-.section-one h4 {
-	padding: 10px 0;
-}
-
-.section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
-}
-
-.section-two h4,
-.section-three h4 {
-	padding: 10px 30px;
-}
 
 .menu {
 	list-style: none;
@@ -161,29 +158,35 @@ header nav ul li a{
 	color: #333;
 	font-size: 1em;
 	line-height: 1.31em;
+	padding: 0;
 }
 
 .address {
 	font-size: 1em;
 	line-height: 1.5em;
+	padding: 0;
 }
 
 /*The widths are in a percentage!*/
 footer {
+	width: 100%;
+	height: auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 50px;
 	border-top: 3px solid #eee;
 	margin: 0 auto;
-	clear: both;
-	text-align: center;
+	/* text-align: center; */
+}
+
+footer h4 {
+	font-size: 1em;
 }
 footer span {
 	font-family: 'Wisdom Script', cursive;
 	text-transform: lowercase;
 	color: #77a466;
-	font-size: 0.88em;
+	font-size: 1.5em;
 }
 
 
