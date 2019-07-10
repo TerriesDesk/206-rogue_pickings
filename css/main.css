@@ -10,28 +10,19 @@ html {
 
 body {
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	color: #000000;
 	font-size: 1em;
-}
-
-.container{
-	max-width: 1200px;
-	margin: 0 auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-h1,
-h2,
-h3,
-h4 {
-	color: black;
+h1, h2, h3, h4 {
+	color: #000000;
 	text-transform: uppercase;
-	font-weight: 700;
+	font-weight:700;
 }
+
 h1 {
 	font-size: 1.88em;
 }
@@ -51,40 +42,49 @@ p {
     padding: 0 30px;
 }
 
-/*The widths are in a percentage!*/
-header {
+/**************MOBILE STYLES ****************/
+.container{
+	max-width: 1200px;
+	width: 90%;
 	display: flex;
+	flex-flow: column nowrap;
 	justify-content: center;
 	align-items: center;
-	height: 110px;
-	border-bottom: 3px solid #77a466;
-	margin: 0 auto;
+}
+
+/***************HEADER STYLES *****************/
+header {
+	width: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
 }
 
 header h1 {
-	float: left;
-	margin: 0;
-	padding: 38px 0;
+	width: 100%;
+	margin: 1em 0;
+	text-align: center;
+	border-bottom: 3px solid #77a466;
 }
+
 header h1 span {
 	color: #77a466;
 }
 
-header nav {
-	float: right;
-	padding: 46px 0;
-}
 header nav ul {
 	margin: 0;
 	padding: 0;
 }
+
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: .88em;
-	padding: 0 10px;
-	display: inline;
+	padding: 1em;
+	list-style-type: none;
 }
+
 header nav ul li a{
 	text-decoration: none;
 	color:#77a466;
@@ -184,4 +184,18 @@ footer span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: 0.88em;
+}
+
+
+@media all and (min-width:769px) {
+	/* Tablet Styles Here */
+
+
+}
+
+
+@ media all and (min-width: 1200px) {
+	/* Desktop Styles Here */
+
+
 }
