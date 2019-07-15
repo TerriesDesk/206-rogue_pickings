@@ -191,15 +191,45 @@ footer span {
 }
 
 
-@media all and (min-width:769px) {
+@media all and (min-width:768px) {
 	/* Tablet Styles Here */
+	.bottom-section {
+		flex-flow: row nowrap;
+		align-items: flex-start;
+		justify-content: space-evenly;
+	}
 
+	.section-one, .section-two, .section-three {
+			padding: 0 0 0 15px;
+	}
 
+	.section-two {
+		padding: 0 40px 0 15px;
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+	}
 }
 
 
-@ media all and (min-width: 1200px) {
+@media all and (min-width: 1200px) {
 	/* Desktop Styles Here */
+		header {
+			background: pink;
+			flex-flow: row nowrap;
+			justify-content: flex-start;
+			align-content: flex-end;
+			border-bottom: 3px solid #77a466;
 
+		}
 
+		header h1 {
+			text-align: left;
+			margin: 0;
+			border: 0;
+		}
+
+		header nav ul {
+			display: flex;
+			flex-flow: row nowrap;
+		}
 }
