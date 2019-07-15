@@ -214,22 +214,25 @@ footer span {
 @media all and (min-width: 1200px) {
 	/* Desktop Styles Here */
 		header {
-			background: pink;
 			flex-flow: row nowrap;
-			justify-content: flex-start;
-			align-content: flex-end;
-			border-bottom: 3px solid #77a466;
-
+			align-items: baseline;
+			padding-bottom: 1em;
 		}
 
 		header h1 {
+			width: 50%;
 			text-align: left;
-			margin: 0;
 			border: 0;
+		}
+
+		header nav {
+			width: 50%;
+			height: auto;
 		}
 
 		header nav ul {
 			display: flex;
-			flex-flow: row nowrap;
+			justify-content: space-between;
+
 		}
 }
